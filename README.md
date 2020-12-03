@@ -1,2 +1,2 @@
 # sasaw
-Creacion de pagina web tradicional (PHP,JS,HTML,CSS/GRID,BOOTSTRAP)
+Creacion de pagina web tradicional (PHP,HTML,CSS/GRID)

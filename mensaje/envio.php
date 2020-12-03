@@ -10,6 +10,6 @@ if (isset($_REQUEST['enviar'])) {
     $_SESSION['mensaje'] = 'Tarea guardada';
     $_SESSION['tipo-mensaje'] = 'success';
 
-    header('location: ../index.php');
+    header("location:enviado.html");
 }
 ?>

@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+#principal
+{
+  display: grid;
+  justify-items:center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;;
+  background-color: white;
+  grid-template-rows: repeat(2, auto);
+}
+/* esto es para la imagen */
+.imgEnviado
+{
+  width: 25%;
+}
+.ee
+{
+  width: 100%
+}
+/* aca va  estar el texto */
+.textoEnviado
+{
+  width: auto;
+  text-align: center;
+  display: grid;
+  grid-row-gap: 5%;
+}
+.botton
+{
+  text-decoration:none;
+  font-weight:600;
+  font-size:20px;
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:40px;
+  padding-right:40px;
+  background-color:#005BBB;
+}
+@media screen and (max-width: 750px)
+{
+  .imgEnviado
+  {
+    width: 80%;
+  }
+}

@@ -187,7 +187,7 @@ p{
 .imgcont{
     width: 100%;
 }
-.contadiv{
+#contadiv{
     display: grid;
     justify-items: center;
     align-items: center;
@@ -197,8 +197,6 @@ p{
     display: grid;
     grid-template-rows: repeat(8, auto);
     grid-row-gap: 10px;
-}
-form{
     text-align: center;
     width: auto;
     height: auto;

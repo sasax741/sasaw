@@ -1,4 +1,4 @@
-  <?php include('includes/head.php');
+  <?php include('includes/head.html');
    include('includes/menu.html');?>
         <main class="contenedor">
             <div id="Sobrenosotros"></div>
@@ -69,8 +69,8 @@
                     <div class="imgconta">
                         <img src="imagenes/contactanos.svg" class="imgcont">
                     </div>
-                    <div class="contadiv">
-                        <form action="php/envio.php" method="post" class="contahijo" >
+                    <div id="contadiv" class="">
+                        <form action="mensaje/envio.php" method="post" class="contahijo" >
                             <label for="nombre">Nombre y apellido</label>
                             <input type="text" name="nombre" id="nombre" >
                             <label for="mail">Ingrese su mail</label>
