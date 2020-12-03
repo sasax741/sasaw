@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+/* header */
+
+header{
+    grid-area: barra;
+    width: 100%;
+    height: 600px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(77,6,134,0.5998774509803921) 35%, rgba(0,212,255,1) 100%), url(../imagenes/ola.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "vacio"
+    "texto"
+    "ola";
+}
+#menupr{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: "inicio nosotros servicios productos contacto";
+    grid-column-gap: 3ch;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    background: #4d0686;
+    color: white;
+    height: 7%;
+    align-items: center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    padding: 1px;
+    z-index: 100;
+
+
+
+}
+.inicio{
+    display: grid;
+    grid-area: inicio;
+}
+.sono{
+    display: grid;
+    grid-area: nosotros;
+}
+.servi{
+    display: grid;
+    grid-area: servicios;
+}
+.prod{
+    display: grid;
+    grid-area: productos;
+}
+.contacto{
+    display: grid;
+    grid-area: contacto;
+}
+.wave{
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    grid-area: ola;
+}
+.textoHeader{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-area: texto;
+
+}
+.textoHeader h1{
+    font-size: 50px;
+    color: white;
+}
+.textoHeader h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 750px)
+{
+    .inicio h2{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .sono h2{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .servi h2{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .prod h2{
+        font-size: 16px;
+    font-weight: 300;
+    }
+    .contacto h2{
+        font-size: 16px;
+        font-weight: 300;
+    }
+}

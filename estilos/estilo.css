@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+#total{
+    display: grid;
+    grid-template-rows: repeat(3,  auto);
+    grid-template-areas: "barra" "medio" "barraa";
+    grid-row-gap: 3%;
+
+
+}
+.contenedor{
+    display: grid;
+    justify-items: center;
+    width: 90%;
+    margin: 0 auto;
+    grid-area: medio;
+    background-color: white;
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap:70px;
+    padding: 20px;
+}
+
+.titulo{
+    color: #642a73;
+    font-size: 40px;
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+h3{
+    font-size: 30px;
+}
+p{
+    font-size: 20px;
+}
+/* sobre nosotros */
+.ioc{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-area: fotoc;
+
+}
+.io{
+
+    border-radius: 40%;
+    width: 50%;
+    grid-area: foto;
+}
+.Sobrenosotroshijo{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "fotoc contmua";
+}
+.contenedormua{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 15px;
+    grid-area: contmua;
+}
+.contenedormua p{
+    width: 80%;
+}
+.contenedormua h3 span{
+    background: #4d0686;
+    color: white;
+
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: auto;
+
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+}
+
+/* Nuestro producto*/
+.imgs{
+    width: 70%;
+}
+.imgSobre{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-area: fotopro;
+}
+.contenedorsobre{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "fotopro textopro" ;
+    justify-items: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.contenidoTextos{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-area: textopro;
+}
+.titu{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-items: center ;
+    grid-column-gap: 15px;
+}
+
+.contenidoTextos .titu span{
+    background: #4d0686;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    align-items: center;
+    justify-items: center;
+}
+.contenidoTextos p{
+    width: 60%;
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/* productos */
+
+.contenedorProdu{
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.produCont{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap: 30px;
+}
+.servicioInd{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 15px;
+}
+.servicioInd2{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 15px;
+}
+.servicioInd3{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 15px;
+}
+.imgp{
+    width: 80%;
+}
+/* contacto */
+#contapadre{
+    display: grid;
+}
+.conta{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+}
+.imgconta{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.imgcont{
+    width: 100%;
+}
+.contadiv{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.contahijo{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-row-gap: 10px;
+}
+form{
+    text-align: center;
+    width: auto;
+    height: auto;
+    background: #4d0686;
+    color: white;
+    padding: 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    border-radius: 25px;
+
+}
+label{
+    width: 100%;
+    font-size: 20px;
+
+}
+input{
+    border-radius: 5px;
+    height: auto;
+    padding: 5px;
+}
+select{
+    padding: 5px;
+    font-size: 20px;
+}
+textarea{
+    font-size: 20px;
+}
+@media screen and (max-width: 750px)
+{
+    .Sobrenosotroshijo{
+
+        grid-template-areas: "fotoc fotoc"
+        "contmua contmua";
+        justify-content: center;
+        align-items: center;
+        grid-row-gap: 50px;
+    }
+    .contenedormua{
+        justify-items: center;
+        align-items: center;
+    }
+    .contenedormua h3{
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+    }
+    /* servicios*/
+    .contenedorsobre{
+        display: grid;
+        grid-template-areas: "fotopro fotopro"
+        "textopro textopro";
+    }
+    .produCont{
+        display: grid;
+        grid-template-areas: "service service service"
+        "service2 service2 service2"
+        "service3 service3 service3";
+        grid-row-gap: ;
+    }
+    .servicioInd{
+        grid-area: service;
+        padding-top: 60px;
+    }
+    .servicioInd2{
+        grid-area: service2;
+        padding-top: 60px;
+    }
+    .servicioInd3{
+        grid-area: service3;
+        padding-top: 60px;
+    }
+    .conta{
+        display: grid;
+        grid-template-areas: "fotoformu fotoformu"
+         "formu formu"
+        ;
+    }
+    .contadiv{
+        display: grid;
+        grid-area: formu;
+        padding-top: 25px;
+    }
+    .imgconta{
+        display: grid;
+        grid-area: fotoformu;
+
+    }
+    .titu{
+        margin-bottom: 20px;
+    }
+    .contenidoTextos p{
+        width: 100%;
+    }
+    .contenedormua p{
+        width: 100%;
+    }
+    .contenedormua h3 span{
+        width: 100%;
+
+    }
+}
