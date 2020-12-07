@@ -72,7 +72,7 @@
                     <div id="contadiv" class="">
                         <form action="mensaje/envio.php" method="post" class="contahijo" >
                             <label for="nombre">Nombre y apellido</label>
-                            <input type="text" name="nombre" id="nombre" >
+                            <input type="text" name="nombre" id="nombre"  >
                             <label for="mail">Ingrese su mail</label>
                             <input type="email" name="mail" id="mail" >
                             <label for="producto">Seleccione el producto que le interesa</label>
@@ -83,7 +83,7 @@
                                 <option value="mantenimiento">Mantenimiento</option>
                             </select>
                             <label for="detalle">Detalle la consulta sobre el producto</label>
-                            <textarea name="detalle" id="detalle" cols="30" rows="8"></textarea>
+                            <textarea name="detalle" id="detalle" cols="30" rows="5"></textarea>
                             <input type="submit" name="enviar">
                         </form>
                     </div>

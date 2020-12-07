@@ -275,7 +275,7 @@ textarea{
          "formu formu"
         ;
     }
-    .contadiv{
+    #contadiv{
         display: grid;
         grid-area: formu;
         padding-top: 25px;
