@@ -7,9 +7,10 @@ if (isset($_REQUEST['enviar'])) {
     $mensaje=$_REQUEST['detalle'];
     mail($to, $asunto, $mensaje, $Cliente);
 
-    $_SESSION['mensaje'] = 'Tarea guardada';
-    $_SESSION['tipo-mensaje'] = 'success';
 
-    header("location:enviado.html");
+    echo'<script type="text/javascript">
+          alert("Mensaje enviado.");
+          window.location.href="../index.php";
+      </script>';
 }
 ?>
